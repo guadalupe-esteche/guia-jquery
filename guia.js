@@ -14,7 +14,7 @@ function alerta() {
 }
 */
 
-/* ejercicio 3 */
+/* ejercicio 3 
 function inicializarEvento () {
     let fila1 = $("#primerFila");
     fila1.click(presionFila1);
@@ -29,3 +29,52 @@ function presionFila1 (){
 function presionFila2 (){
     fila2.css("background-color", "purple")
 }
+*/
+
+/*ejercicio 4 
+function inicializarEvento () {
+    let li = $("li");
+    li.click(presionElemento);
+}
+
+function presionElemento (){
+    let li = $(this);
+    li.hide();
+}
+*/
+
+/* ejercicio 5 
+function inicializarEvento () {
+    let li = $("#tabla1 tr");
+    li.click(presionElemento);
+}
+
+function presionElemento (){
+    let li = $(this)
+    li.css("background-color", "pink");
+}
+*/
+
+/* ejercicio 6 */
+function inicializarEvento () {
+    let p = $("#boton1");
+    p.click(tamañoPequeño);
+    let m = $("#boton2");
+    m.click(tamañoMediano);
+    let g = $("#boton3");
+    g.click(tamañoGrande);
+}
+
+function tamañoPequeño(){
+    let p = $("descripcion_noticia")
+    p.css("font-size", "5px")
+}
+function tamañoMediano(){
+    let m = $("descripcion_noticia")
+    m.css("font-size", "15px")
+}
+function tamañoGrande(){
+    let g = $("descripcion_noticia")
+    g.css("font-size", "30px")
+}
+
