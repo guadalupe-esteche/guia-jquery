@@ -142,7 +142,7 @@ function inicializarEvento() {
     x.removeClass("cuerpo");
   }
     */
-   
+
 /* ejercicio 10 
 function inicializarEvento() {
     let b1_ = $("#boton10");
@@ -241,8 +241,40 @@ function volverOriginal(){
 }
 */
 
-/* ejercicio 16 */
-/* ejercicio 17 */
+/* ejercicio 16 
+function inicializarEvento() {
+    let x = $("#recuadro2");
+    x.dblclick(redimensionarRecuadro)
+}
+
+let estado = 1;
+
+function redimensionarRecuadro() {
+    if (estado == 1) {
+        $(this).css("width", "250px");
+        $(this).css("height", "250px");
+        estado = 2;
+    }
+    else {
+        $(this).css("width", "800px");
+        $(this).css("height", "70px");
+        estado = 1;
+    }
+}
+*/
+
+/* ejercicio 17 
+function inicializarEvento(){
+    let t1 = $("#text1");
+    t1.focus(tomaFoco);
+    let t2 = $("#text2");
+    t2.focus(tomaFoco)
+}
+
+function tomaFoco(){
+    $(this).css("color", "red");
+}
+*/
 /* ejercicio 18 */
 /* ejercicio 19 */
 /* ejercicio 20 */
