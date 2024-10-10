@@ -120,6 +120,104 @@ function hipervinculoX(){
 }
 */
 
-/* ejercicio 9 */
+/* ejercicio 9 
+function inicializarEvento() {
+    let x = $("#boton8");
+    x.click(asociarClase);
+    x = $("#boton9");
+    x.click(desasociarClase);
+  }
+  
+  function asociarClase() {
+    let x = $("#tabla5 th");
+    x.addClass("titulo");
+    x = $("#tabla5 td");
+    x.addClass("cuerpo");
+  }
+  
+  function desasociarClase() {
+    let x = $("#tabla5 th");
+    x.removeClass("titulo");
+    x = $("#tabla5 td");
+    x.removeClass("cuerpo");
+  }
+    */
+/* ejercicio 10 
+function inicializarEvento() {
+    let b1_ = $("#boton10");
+    b1_.click(presionBoton1);
+    b2_ = $("#boton11");
+    b2_.click(presionBoton2);
+  }
+  
+  function presionBoton1() {
+    let x = $("head");
+    alert(x.html());
+  }
+  function presionBoton2() {
+    let x = $("body");
+    alert(x.html());
+  }
+*/
 
-/* ejercicio 10 */
+/* ejercicio 11 
+function inicializarEvento(){
+    let x = $("strong");
+    x.click(ocultarPalabra)
+}
+
+function ocultarPalabra(){
+    $(this).hide();
+}
+*/
+
+/* ejercicio 12 
+function inicializarEvento(){
+    let x = $("#tabla12 td");
+    x.mouseover(mouseEntra);
+    x.mouseout(mouseSale);
+}
+
+function mouseEntra(){
+    $(this).css("background-color", "pink");
+}
+
+function mouseSale(){
+    $(this).css("background", "purple");
+}
+*/
+
+/* ejercicio 13 
+function inicializarEvento(){
+    let x = $("#tabla12 td");
+    x.hover(mouseEntra, mouseSale);
+}
+
+function mouseEntra(){
+    $(this).css("background-color", "blue");
+}
+
+function mouseSale(){
+    $(this).css("background", "green");
+}
+*/
+
+/* ejercicio 14 */
+function inicializarEvento(){
+    let x = $("#recuadro");
+    x.mousemove(moverMouse);
+    x = $("#recuadro")
+    x.mouseout(mouseSale);
+}
+
+function moverMouse(){
+    let x = $("#coordenada");
+  x.text("(" + event.clientX + "," + event.clientY + ")");
+}
+
+function mouseSale() {
+    let x = $("#coordenada");
+    x.text("Flecha fuera del recuadro");
+  }
+
+/* ejercicio 15 */
