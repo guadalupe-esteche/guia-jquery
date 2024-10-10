@@ -38,6 +38,18 @@
   height: 70px;
 }
 
-#text1, #text2 {
+#text1,
+#text2 {
   color: blue;
+}
+
+div {
+  border: 2px solid black;
+  text-align: center;
+}
+
+#div2,
+#div4,
+#div6 {
+  display: none;
 }

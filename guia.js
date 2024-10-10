@@ -275,6 +275,69 @@ function tomaFoco(){
     $(this).css("color", "red");
 }
 */
-/* ejercicio 18 */
-/* ejercicio 19 */
-/* ejercicio 20 */
+
+/* ejercicio 18 
+function inicializarEvento(){
+    let t = $("#text3");
+    t.blur(pierdeFoco)
+}
+
+function pierdeFoco() {
+    let x = $(this);
+    let cadena = x.val();
+    if (cadena.length==0)
+      alert("No ingresó datos");
+  }
+*/
+
+/* ejercicio 20 
+function inicializarEvento(){
+    let d = $("#div1");
+    d.click(ocultar);
+}
+
+function ocultar(){
+    let d = $("#div1");
+    d.hide("slow", mostrar);
+}
+
+function mostrar (){
+    let m = $("#div2");
+    m.show("slow");
+}
+*/
+
+/* ejercicio 21 
+function inicializarEvento(){
+    let d = $("#div3");
+    d.click(ocultar);
+}
+
+function ocultar(){
+    let d = $("#div3");
+    d.fadeOut("slow", mostrar);
+}
+
+function mostrar (){
+    let d = $("#div4");
+    d.fadeIn("slow");
+}
+*/
+
+/* ejercicio 22 
+function inicializarEvento(){
+    let d = $("#div5");
+    d.click(reducirOpacidad);
+}
+
+function reducirOpacidad(){
+    $(this).fadeTo("slow", 0.20, mostrarBloque);
+}
+
+function mostrarBloque(){
+    let d = $("#div6");
+    d.fadeTo("slow", 1);
+}
+*/
+
+/* ejercicio 24 */
