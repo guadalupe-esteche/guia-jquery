@@ -142,6 +142,7 @@ function inicializarEvento() {
     x.removeClass("cuerpo");
   }
     */
+   
 /* ejercicio 10 
 function inicializarEvento() {
     let b1_ = $("#boton10");
@@ -202,7 +203,7 @@ function mouseSale(){
 }
 */
 
-/* ejercicio 14 */
+/* ejercicio 14 
 function inicializarEvento(){
     let x = $("#recuadro");
     x.mousemove(moverMouse);
@@ -219,5 +220,29 @@ function mouseSale() {
     let x = $("#coordenada");
     x.text("Flecha fuera del recuadro");
   }
+*/
 
-/* ejercicio 15 */
+/* ejercicio 15 
+function inicializarEvento(){
+    let b1_ = $("#boton12");
+    b1_.mousedown(cambiarColor);
+    b1_.mouseup(volverOriginal)
+    let b2_ = $("#boton13");
+    b2_.mousedown(cambiarColor);
+    b2_.mouseup(volverOriginal)
+}
+
+function cambiarColor(){
+    $(this).css("background-color", "blue");
+}
+
+function volverOriginal(){
+    $(this).css("background-color", "#D4D0C8");
+}
+*/
+
+/* ejercicio 16 */
+/* ejercicio 17 */
+/* ejercicio 18 */
+/* ejercicio 19 */
+/* ejercicio 20 */
